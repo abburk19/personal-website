@@ -18,17 +18,25 @@
 html { scroll-behavior: smooth; }
 
 body {
-        margin: 0;
-        font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
-        background:
-                  radial-gradient(ellipse 900px 500px at 15% -10%, rgba(79, 184, 224, 0.10), transparent 60%),
-                  radial-gradient(ellipse 700px 500px at 100% 0%, rgba(232, 147, 74, 0.09), transparent 55%),
-                  url('background.svg') center bottom / cover no-repeat,
-                  var(--bg);
-        background-attachment: fixed;
-        color: var(--text);
-        line-height: 1.6;
+          margin: 0;
+          font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+          background-image:
+            linear-gradient(180deg, rgba(5, 7, 10, 0.55) 0%, rgba(5, 7, 10, 0.82) 45%, rgba(5, 7, 10, 0.96) 100%),
+                      var(--page-bg, none);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-color: var(--bg);
+          color: var(--text);
+          line-height: 1.6;
 }
+
+body.page-index   { --page-bg: url('../Background%20images/wp12481909-dark-space-4k-wallpapers.jpg'); }
+body.page-work    { --page-bg: url('../Background%20images/wp12489447-4k-desktop-space-wallpapers.jpg'); }
+body.page-writing { --page-bg: url('../Background%20images/wp12251869-interstellar-space-wallpapers.jpg'); }
+body.page-travel  { --page-bg: url('../Background%20images/wp12665976-deep-space-4k-wallpapers.jpg'); }
+body.page-blog    { --page-bg: url('../Background%20images/wp12560083-4k-astronomy-wallpapers.jpg'); }
 
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
