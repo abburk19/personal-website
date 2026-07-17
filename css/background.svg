@@ -1,50 +1,43 @@
 <svg <svg viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-              <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
-                        <stop offset="0%" stop-color="#c9a227" stop-opacity="0.35"/>
-                        <stop offset="60%" stop-color="#c9a227" stop-opacity="0.08"/>
-                        <stop offset="100%" stop-color="#c9a227" stop-opacity="0"/>
-              </radialGradient>
-              <radialGradient id="emberGlow" cx="50%" cy="50%" r="50%">
-                        <stop offset="0%" stop-color="#e2b33c" stop-opacity="0.9"/>
-                        <stop offset="100%" stop-color="#e2b33c" stop-opacity="0"/>
-              </radialGradient>
-              <pattern id="scales" width="40" height="40" patternUnits="userSpaceOnUse">
-                        <path d="M0,20 A20,20 0 0 1 40,20" fill="none" stroke="#c9a227" stroke-width="1"/>
-                        <path d="M-20,40 A20,20 0 0 1 20,40" fill="none" stroke="#c9a227" stroke-width="1"/>
-                        <path d="M20,40 A20,20 0 0 1 60,40" fill="none" stroke="#c9a227" stroke-width="1"/>
-              </pattern>
-      </defs>
-
-      <rect x="0" y="0" width="1600" height="900" fill="url(#scales)" opacity="0.07"/>
-
-      <circle cx="280" cy="140" r="210" fill="url(#moonGlow)"/>
-
-      <circle cx="200" cy="200" r="4" fill="url(#emberGlow)"/>
-      <circle cx="380" cy="120" r="3" fill="url(#emberGlow)"/>
-      <circle cx="650" cy="250" r="5" fill="url(#emberGlow)"/>
-      <circle cx="900" cy="100" r="3" fill="url(#emberGlow)"/>
-      <circle cx="1100" cy="300" r="4" fill="url(#emberGlow)"/>
-      <circle cx="150" cy="400" r="3" fill="url(#emberGlow)"/>
-      <circle cx="1450" cy="350" r="4" fill="url(#emberGlow)"/>
-
-      <g transform="translate(1590,190) scale(1.5)" opacity="0.16" fill="#000000">
-              <path d="M0,0 L-60,-30 Q-90,-45 -100,-20 L-140,-70 Q-160,-60 -160,-30 L-210,-90 Q-220,-70 -215,-40 L-270,-80 Q-275,-55 -260,-30 L-300,-40 Q-260,10 -180,20 Q-100,30 0,0 Z"/>
-      </g>
-      <g transform="translate(1650,260) scale(1.05)" opacity="0.10" fill="#8a1f1f">
-              <path d="M0,0 L-60,-30 Q-90,-45 -100,-20 L-140,-70 Q-160,-60 -160,-30 L-210,-90 Q-220,-70 -215,-40 L-270,-80 Q-275,-55 -260,-30 L-300,-40 Q-260,10 -180,20 Q-100,30 0,0 Z"/>
-      </g>
-
-      <path d="M0,900 L0,680 L120,600 L220,660 L340,560 L460,640 L580,540 L700,620 L820,560 L940,650 L1060,580 L1180,660 L1300,570 L1420,650 L1600,600 L1600,900 Z" fill="#4a3018" opacity="0.9" stroke="#c9a227" stroke-width="2" stroke-opacity="0.2"/>
-
-      <path d="M0,900 L0,780 L100,700 L200,760 L320,680 L440,750 L560,690 L680,760 L800,700 L920,770 L1040,710 L1160,760 L1280,700 L1400,770 L1600,730 L1600,900 Z" fill="#1c0f06" stroke="#c9a227" stroke-width="1.5" stroke-opacity="0.15"/>
-
-      <g fill="#120a04">
-              <rect x="654" y="636" width="28" height="66"/>
-              <polygon points="644,636 692,636 668,600"/>
-              <rect x="596" y="656" width="24" height="46"/>
-              <polygon points="588,656 628,656 608,624"/>
-              <rect x="700" y="662" width="22" height="40"/>
-              <polygon points="693,662 729,662 711,632"/>
-      </g>
+        <defs>
+                  <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+                              <stop offset="0%" stop-color="#c9a227" stop-opacity="0.35"/>
+                              <stop offset="60%" stop-color="#c9a227" stop-opacity="0.08"/>
+                              <stop offset="100%" stop-color="#c9a227" stop-opacity="0"/>
+                  </radialGradient>
+                  <radialGradient id="emberGlow" cx="50%" cy="50%" r="50%">
+                              <stop offset="0%" stop-color="#e2b33c" stop-opacity="0.9"/>
+                              <stop offset="100%" stop-color="#e2b33c" stop-opacity="0"/>
+                  </radialGradient>
+                  <pattern id="scales" width="40" height="40" patternUnits="userSpaceOnUse">
+                              <path d="M0,20 A20,20 0 0 1 40,20" fill="none" stroke="#c9a227" stroke-width="1"/>
+                              <path d="M-20,40 A20,20 0 0 1 20,40" fill="none" stroke="#c9a227" stroke-width="1"/>
+                              <path d="M20,40 A20,20 0 0 1 60,40" fill="none" stroke="#c9a227" stroke-width="1"/>
+                  </pattern>
+        </defs>
+        <rect x="0" y="0" width="1600" height="900" fill="url(#scales)" opacity="0.07"/>
+        <circle cx="280" cy="140" r="210" fill="url(#moonGlow)"/>
+        <circle cx="200" cy="200" r="4" fill="url(#emberGlow)"/>
+        <circle cx="380" cy="120" r="3" fill="url(#emberGlow)"/>
+        <circle cx="650" cy="250" r="5" fill="url(#emberGlow)"/>
+        <circle cx="900" cy="100" r="3" fill="url(#emberGlow)"/>
+        <circle cx="1100" cy="300" r="4" fill="url(#emberGlow)"/>
+        <circle cx="150" cy="400" r="3" fill="url(#emberGlow)"/>
+        <circle cx="1450" cy="350" r="4" fill="url(#emberGlow)"/>
+        <g transform="translate(1590,190) scale(1.5)" opacity="0.16" fill="#000000">
+                  <path d="M0,0 L-60,-30 Q-90,-45 -100,-20 L-140,-70 Q-160,-60 -160,-30 L-210,-90 Q-220,-70 -215,-40 L-270,-80 Q-275,-55 -260,-30 L-300,-40 Q-260,10 -180,20 Q-100,30 0,0 Z"/>
+        </g>
+        <g transform="translate(1650,260) scale(1.05)" opacity="0.10" fill="#8a1f1f">
+                  <path d="M0,0 L-60,-30 Q-90,-45 -100,-20 L-140,-70 Q-160,-60 -160,-30 L-210,-90 Q-220,-70 -215,-40 L-270,-80 Q-275,-55 -260,-30 L-300,-40 Q-260,10 -180,20 Q-100,30 0,0 Z"/>
+        </g>
+        <path d="M0,900 L0,680 L120,600 L220,660 L340,560 L460,640 L580,540 L700,620 L820,560 L940,650 L1060,580 L1180,660 L1300,570 L1420,650 L1600,600 L1600,900 Z" fill="#4a3018" opacity="0.9" stroke="#c9a227" stroke-width="2" stroke-opacity="0.2"/>
+        <path d="M0,900 L0,780 L100,700 L200,760 L320,680 L440,750 L560,690 L680,760 L800,700 L920,770 L1040,710 L1160,760 L1280,700 L1400,770 L1600,730 L1600,900 Z" fill="#1c0f06" stroke="#c9a227" stroke-width="1.5" stroke-opacity="0.15"/>
+        <g fill="#120a04">
+                  <rect x="654" y="636" width="28" height="66"/>
+                  <polygon points="644,636 692,636 668,600"/>
+                  <rect x="596" y="656" width="24" height="46"/>
+                  <polygon points="588,656 628,656 608,624"/>
+                  <rect x="700" y="662" width="22" height="40"/>
+                  <polygon points="693,662 729,662 711,632"/>
+        </g>
 </svg>
