@@ -244,3 +244,78 @@ blockquote {
         color: var(--text-dim);
         font-style: italic;
 }
+
+
+/* ---- Page transitions ---- */
+
+/* Opt in to native cross-document view transitions (Chrome/Edge).
+   Browsers without support just navigate normally, no animation. */
+@view-transition {
+          navigation: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+
+  .site-header,
+          .hero,
+          main section,
+          footer {
+                      animation: warp-in 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+          }
+
+  .site-header { animation-delay: 0s; }
+          .hero { animation-delay: 0.08s; }
+          main section:nth-of-type(1) { animation-delay: 0.16s; }
+          main section:nth-of-type(2) { animation-delay: 0.22s; }
+          main section:nth-of-type(3) { animation-delay: 0.28s; }
+          main section:nth-of-type(4) { animation-delay: 0.34s; }
+          main section:nth-of-type(5) { animation-delay: 0.4s; }
+          footer { animation-delay: 0.42s; }
+
+  @keyframes warp-in {
+              0% {
+                            opacity: 0;
+                            transform: translateY(14px) scale(0.99);
+                            filter: blur(4px);
+              }
+              100% {
+                            opacity: 1;
+                            transform: translateY(0) scale(1);
+                            filter: blur(0);
+              }
+  }
+
+  ::view-transition-old(root) {
+              animation: hyperspace-out 0.55s cubic-bezier(0.4, 0, 0.2, 1) both;
+  }
+
+  ::view-transition-new(root) {
+              animation: hyperspace-in 0.55s cubic-bezier(0.4, 0, 0.2, 1) both;
+  }
+
+  @keyframes hyperspace-out {
+              0% {
+                            opacity: 1;
+                            filter: blur(0) brightness(1);
+                            transform: scale(1);
+              }
+              100% {
+                            opacity: 0;
+                            filter: blur(10px) brightness(2.4);
+                            transform: scale(1.1);
+              }
+  }
+
+  @keyframes hyperspace-in {
+              0% {
+                            opacity: 0;
+                            filter: blur(10px) brightness(2.4);
+                            transform: scale(1.1);
+              }
+              100% {
+                            opacity: 1;
+                            filter: blur(0) brightness(1);
+                            transform: scale(1);
+              }
+  }
+}
